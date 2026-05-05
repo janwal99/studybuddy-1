@@ -5,10 +5,18 @@
 A comprehensive Python project demonstrating advanced programming concepts and best practices.
 
 ## Features
-- [List key features here]
-- Professional code structure
-- Comprehensive testing
-- Full documentation
+- Filesharing (viewing, uploading, downloading)
+- Groupchat, Chat (create, add, delete, rename, edit)
+- Tasks (create, add, delete, rename, edit)
+- User registration (only Students) / login
+- Profile (University (Uni BS-FH), Degree, Studycourse, Interests) drop-down list
+- Public folder, access for all users
+- Search function for all categories
+
+
+## Would / Should / Will
+- Calls
+- 
 
 ## Requirements
 - Python 3.8+
@@ -30,9 +38,23 @@ pip install -r requirements.txt
 ```
 advanced-programming/
 ├── src/
+│   ├── routers/
+│   │   └── auth.py
+│   ├── services/
+│   │   ├── chat.py
+│   │   ├── filesharing.py
+│   │   ├── groups.py
+│   │   └── tasks.py
+│   ├── uploads/
+│   ├── database.py
+│   ├── logic.py
+│   └── main.py
 ├── tests/
+│   └── test_app.py
 ├── docs/
-└── README.md
+│   └── architecture.md
+├── README.md
+└── requirements.txt
 ```
 
 ## Testing
@@ -52,7 +74,7 @@ See [docs/](docs/) for detailed documentation.
 [Specify your license]
 
 ## Author
-[Your name/BenjaminMag]
+Benjamin Magloire, Jan Walthard, Ciril Spring, Joao Roth
 
 ## Contact
-[Contact information]
+benjamin.magloire@students.fhnw.ch
